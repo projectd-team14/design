@@ -1,4 +1,4 @@
-# API仕様（フロントエンドで使用するAPIのみ記載）  
+# API仕様１（フロントエンドで使用するAPIのみ記載）  
 各プロジェクトごとのAPIの内容です。  
 ※一部外に出せないもの、サーバー間で使用するAPI等はバックエンド担当者に確認をお願いします。
 ## システム基盤：[bicycle-system](https://github.com/projectd-team14/bicycle-system)  
