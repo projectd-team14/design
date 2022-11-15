@@ -226,17 +226,31 @@ response
 POST:http://localhost:8000/api/labels/100
 ```
 request
-{
-    "label_mark" : "A",
-    "label_point1X" : 0,
-    "label_point1Y" : 350,
-    "label_point2X" : 0,
-    "label_point2Y" : 600,
-    "label_point3x" : 625,
-    "label_point3y" : 675,
-    "label_point4X" : 700,
-    "label_point4y" : 600
-}
+[
+	{
+	    "label_mark" : "A",
+	    "label_point1X" : 0,
+	    "label_point1Y" : 350,
+	    "label_point2X" : 0,
+	    "label_point2Y" : 600,
+	    "label_point3x" : 625,
+	    "label_point3y" : 675,
+	    "label_point4X" : 700,
+	    "label_point4y" : 600
+	},
+	{
+	    "label_mark" : "B",
+	    "label_point1X" : 0,
+	    "label_point1Y" : 350,
+	    "label_point2X" : 0,
+	    "label_point2Y" : 600,
+	    "label_point3x" : 625,
+	    "label_point3y" : 675,
+	    "label_point4X" : 700,
+	    "label_point4y" : 600
+	}
+	
+]
 response
 ラベリングデータ A を登録しました
 ```
