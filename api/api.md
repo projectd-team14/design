@@ -277,5 +277,5 @@ GET:http://localhost:9000/bicycle/?camera_id=100&bicycle_id=100
 response
 各駐輪場（カメラ）ごとに自転車のトリミング画像がレスポンスされます。
 ```
-## 管理者用サーバー[admine-server](https://github.com/projectd-team14/admin-server)  
+## 管理者用サーバー：[admine-server](https://github.com/projectd-team14/admin-server)  
 ※このプロジェクトの開発を行う場合はバックエンド担当者に確認をお願いします。
