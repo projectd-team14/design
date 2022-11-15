@@ -1,6 +1,6 @@
-# API仕様  
+# API仕様（フロントエンドで使用するAPIのみ記載）  
 各プロジェクトごとのAPIの内容です。  
-※一部外に出せないものはバックエンド担当者に確認をお願いします。
+※一部外に出せないもの、サーバー間で使用するAPI等はバックエンド担当者に確認をお願いします。
 ## システム基盤：[bicycle-system](https://github.com/projectd-team14/bicycle-system)  
 ・駐輪場の全体情報  
 GET:http://localhost:8000/api/get_all/100
@@ -265,6 +265,17 @@ response
 処理を停止します。
 ```
 ## YOLOv5専用サーバー：[yolov5-server](https://github.com/projectd-team14/yolov5-server)  
-  
+・ラベル用画像生成  
+GET:http://localhost:9000/label/?id=100
+```
+response
+生成された画像がレスポンスされます。
+```
+・自転車のトリミング画像  
+GET:http://localhost:9000/bicycle/?camera_id=100&bicycle_id=100
+```
+response
+各駐輪場（カメラ）ごとに自転車のトリミング画像がレスポンスされます。
+```
 ## 管理者用サーバー[admine-server](https://github.com/projectd-team14/admin-server)  
 ※このプロジェクトの開発を行う場合はバックエンド担当者に確認をお願いします。
