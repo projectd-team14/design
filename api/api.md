@@ -148,7 +148,7 @@ GET:http://localhost:8000/api/get_spot/100
 }
 ```
 ・ダッシュボード
-GET:
+GET:http://localhost:8000/api/congestions_spot/100
 ```
 [
 	{
