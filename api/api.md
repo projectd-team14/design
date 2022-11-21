@@ -147,6 +147,27 @@ GET:http://localhost:8000/api/get_spot/100
 	]
 }
 ```
+・ダッシュボード
+GET:
+```
+[
+	{
+		"spots_name": "テスト用駐輪場A",
+		"spots_violations": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,3,5,5,0,0,0,0,0,0,2],
+		"spots_congestion": 49
+	},
+	{
+		"spots_name": "テスト用駐輪場B",
+		"spots_violations": [0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,3,0,2,0,0],
+		"spots_congestion": 153
+	},
+	{
+		"spots_name": "テスト用駐輪場C",
+		"spots_violations": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		"spots_congestion": 80
+	}
+]
+```
 ・ユーザー登録  
 POST:http://localhost:8000/api/register
 ```
