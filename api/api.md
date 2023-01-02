@@ -1,4 +1,4 @@
-# API仕様１（フロントエンドで使用するAPIのみ記載）  
+# API仕様
 各プロジェクトごとのAPIの内容です。  
 ※一部外に出せないもの、サーバー間で使用するAPI等はバックエンド担当者に確認をお願いします。
 ## システム基盤：[bicycle-system](https://github.com/projectd-team14/bicycle-system)  
@@ -310,7 +310,57 @@ response
 GET:http://localhost:9000/bicycle/?camera_id=100&bicycle_id=100
 ```
 response
-各駐輪場（カメラ）ごとに自転車のトリミング画像がレスポンスされます。
+各駐輪場（カメラ）ごとに自転車のトリミング画像がレスポンスされます。  
 ```
+## YOLOv5専用→基盤サーバー  
+・駐輪場情報の更新
+POST：http://localhost:8000/api/bicycle_update  
+```
+[
+    {
+        "type" : "update",
+        "spots_id" : 100,
+        "cameras_id" : 100,
+        "labels_name" : "a", 
+        "get_id" : 1,
+        "bicycles_x_coordinate" : 100,
+        "bicycles_y_coordinate" : 100
+    },
+        {
+        "type" : "update",
+        "spots_id" : 100,
+        "cameras_id" : 100,
+        "labels_name" : "a", 
+        "get_id" : 2,
+        "bicycles_x_coordinate" : 100,
+        "bicycles_y_coordinate" : 100
+    },
+        {
+        "type" : "insert",
+        "spots_id" : 100,
+        "cameras_id" : 100,
+        "labels_name" : "a", 
+        "get_id" : 3,
+        "bicycles_x_coordinate" : 100,
+        "bicycles_y_coordinate" : 100
+    }
+]
+```  
+・違反車両の更新
+POST：http://localhost:8000/api/bicycle_violation  
+```
+{
+	"cameras_id" : 100,
+	"violation_list" : [1, 2, 3]
+}
+```  
+・自転車の削除
+POST：http://localhost:8000/api/bicycle_delete  
+```
+{
+	"cameras_id" : 100,
+	"delete_list" : [1, 2, 3]
+}
+```  
 ## 管理者用サーバー：[admine-server](https://github.com/projectd-team14/admin-server)  
 ※このプロジェクトの開発を行う場合はバックエンド担当者に確認をお願いします。
