@@ -39,6 +39,12 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a6110855
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
+10.モジュールをインストール
+```
+sudo yum install php-bcmath
+sudo yum install php-mbstring
+sudo yum install php-xml
+```
 10.パスを通す
 ```
 sudo mv composer.phar /usr/local/bin/composer
