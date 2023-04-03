@@ -51,7 +51,7 @@ sudo yum install git
 1.php-fpm
 ・移動
 ```
- sudo vi /etc/php-fpm.d/www.conf
+sudo vi /etc/php-fpm.d/www.conf
 ```
 ・.confを修正
 ```
@@ -192,7 +192,7 @@ sudo mkdir /var/www
 sudo chown ec2-user:nginx /var/www
 ```
 ```
-udo chmod 2775 /var/www
+sudo chmod 2775 /var/www
 ```
 ```
 sudo usermod -a -G nginx ec2-user
