@@ -205,15 +205,15 @@ cd ~/.ssh
 ```
 ssh-keygen
 ```
+2.コピーしてGitHubに登録
 ```
-// コピーしてGitHubに登録
 sudo cat id_rsa.pub
 ```
-2.接続確認
+3.接続確認
 ```
 ssh -T git@github.com
 ```
-3.リポジトリをclone
+4.リポジトリをclone
 ```
 cd /var/www
 ```
