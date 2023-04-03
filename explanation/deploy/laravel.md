@@ -1,5 +1,5 @@
-## LaravelのEC2デプロイ手順  
-### 各種インストール
+# LaravelのEC2デプロイ手順  
+## 各種インストール
 1.パッケージのアップデート
 ```
 sudo yum update
@@ -47,7 +47,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ```
 sudo yum install git
 ```
-### 設定変更
+## 設定変更
 1.php-fpm
 ・移動
 ```
@@ -197,7 +197,7 @@ udo chmod 2775 /var/www
 ```
 sudo usermod -a -G nginx ec2-user
 ```
-### GitHubとSSHの設定
+## GitHubとSSHの設定
 1.SSHキーの作成
 ```
 cd ~/.ssh
