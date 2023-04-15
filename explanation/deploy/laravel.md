@@ -74,7 +74,7 @@ listen.mode = 0660
 ```
 sudo systemctl restart php-fpm.service
 ```
-2.NGINX
+2.NGINX  
 ・移動
 ```
 sudo vi /etc/nginx/nginx.conf
